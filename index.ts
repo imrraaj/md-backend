@@ -5,7 +5,7 @@ import { FSRouter } from "./FSRouter";
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const fsrouter = new FSRouter(app, "src/routes");
+const fsrouter = new FSRouter(app);
 fsrouter.useFileSystemRouting();
 
 app.use(cors());
